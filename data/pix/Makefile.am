@@ -1,4 +1,4 @@
-pixmapdir = $(datadir)/gnome-nibbles/pixmaps
+pixmapdir = $(pkgdatadir)/pixmaps
 
 BONUS_PIX = \
 	bonus1.svg \
@@ -14,7 +14,6 @@ SMALL_PIX = \
 	snake-blue.svg \
 	snake-cyan.svg \
 	snake-green.svg \
-	snake-grey.svg \
 	snake-magenta.svg \
 	snake-red.svg \
 	snake-yellow.svg \
@@ -24,7 +23,6 @@ SMALL_PIX = \
 	wall-corner-top-right.svg \
 	wall-cross.svg \
 	wall-empty.svg \
-	wall-small-empty.svg \
 	wall-straight-side.svg \
 	wall-straight-up.svg \
 	wall-tee-down.svg \
@@ -32,8 +30,17 @@ SMALL_PIX = \
 	wall-tee-right.svg \
 	wall-tee-up.svg
 
-pixmap_DATA = ${BONUS_PIX} ${SMALL_PIX}
+SCOREBOARD_PIX = \
+	scoreboard-life.svg
 
-EXTRA_DIST = $(pixmap_DATA)
+CONTROLS_PIX = \
+	arrow.svg \
+	arrow-key.svg
+
+dist_pixmap_DATA = \
+	${BONUS_PIX} \
+	${SMALL_PIX} \
+	${SCOREBOARD_PIX} \
+	${CONTROLS_PIX}
 
 -include $(top_srcdir)/git.mk

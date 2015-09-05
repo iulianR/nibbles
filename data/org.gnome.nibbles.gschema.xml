@@ -1,32 +1,34 @@
 <schemalist>
   <schema id="org.gnome.nibbles" path="/org/gnome/nibbles/" gettext-domain="gnome-nibbles">
-    <key name="players" type="i">
-      <default>1</default>
-      <summary>Number of human players</summary>
-      <description>Number of human players.</description>
+    <key name="window-width" type="i">
+      <default>730</default>
+      <summary>Width of the window in pixels</summary>
+      <description>Width of the window in pixels.</description>
     </key>
-    <key name="ai" type="i">
-      <default>3</default>
-      <summary>Number of AI players</summary>
-      <description>Number of AI players.</description>
+    <key name="window-height" type="i">
+      <default>630</default>
+      <summary>Height of the window in pixels</summary>
+      <description>Height of the window in pixels.</description>
     </key>
-    <key name="speed" type="i">
-      <default>3</default>
-      <summary>Game speed</summary>
-      <description>Game speed (1=fast, 4=slow).</description>
-    </key>
-    <key name="fakes" type="b">
+    <key name="window-is-maximized" type="b">
       <default>false</default>
-      <summary>Enable fake bonuses</summary>
-      <description>Enable fake bonuses.</description>
+      <summary>true if the window is maximized</summary>
+      <description>true if the window is maximized.</description>
     </key>
-    <key name="random" type="b">
-      <default>false</default>
-      <summary>Play levels in random order</summary>
-      <description>Play levels in random order.</description>
+    <key name="first-run" type="b">
+      <default>true</default>
+      <summary>Is this the first run</summary>
+      <description>Setting to decide whether to show first-run hint dialog or not.</description>
+    </key>
+    <key name="tile-size" type="i">
+      <default>7</default>
+      <range min="7"/>
+      <summary>Size of game tiles</summary>
+      <description>Size of game tiles.</description>
     </key>
     <key name="start-level" type="i">
       <default>1</default>
+      <range min="1" max="26"/>
       <summary>Game level to start on</summary>
       <description>Game level to start on.</description>
     </key>
@@ -34,11 +36,6 @@
       <default>true</default>
       <summary>Enable sounds</summary>
       <description>Enable sounds.</description>
-    </key>
-    <key name="tile-size" type="i">
-      <default>7</default>
-      <summary>Size of game tiles</summary>
-      <description>Size of game tiles.</description>
     </key>
   </schema>
   <schema id="org.gnome.nibbles.worm0" path="/org/gnome/nibbles/worm0/">
@@ -85,22 +82,22 @@
       <description>Use relative movement (ie. left or right only).</description>
     </key>
     <key name="key-up" type="i">
-      <default>65362</default>
+      <default>119</default>
       <summary>Move up</summary>
       <description>Key to use for motion up.</description>
     </key>
     <key name="key-down" type="i">
-      <default>65364</default>
+      <default>115</default>
       <summary>Move down</summary>
       <description>Key to use for motion down.</description>
     </key>
     <key name="key-left" type="i">
-      <default>65361</default>
+      <default>97</default>
       <summary>Move left</summary>
       <description>Key to use for motion left.</description>
     </key>
     <key name="key-right" type="i">
-      <default>65363</default>
+      <default>100</default>
       <summary>Move right</summary>
       <description>Key to use for motion right.</description>
     </key>
@@ -117,22 +114,22 @@
       <description>Use relative movement (ie. left or right only).</description>
     </key>
     <key name="key-up" type="i">
-      <default>65362</default>
+      <default>116</default>
       <summary>Move up</summary>
       <description>Key to use for motion up.</description>
     </key>
     <key name="key-down" type="i">
-      <default>65364</default>
+      <default>106</default>
       <summary>Move down</summary>
       <description>Key to use for motion down.</description>
     </key>
     <key name="key-left" type="i">
-      <default>65361</default>
+      <default>104</default>
       <summary>Move left</summary>
       <description>Key to use for motion left.</description>
     </key>
     <key name="key-right" type="i">
-      <default>65363</default>
+      <default>107</default>
       <summary>Move right</summary>
       <description>Key to use for motion right.</description>
     </key>
@@ -149,22 +146,22 @@
       <description>Use relative movement (ie. left or right only).</description>
     </key>
     <key name="key-up" type="i">
-      <default>65362</default>
+      <default>56</default>
       <summary>Move up</summary>
       <description>Key to use for motion up.</description>
     </key>
     <key name="key-down" type="i">
-      <default>65364</default>
+      <default>53</default>
       <summary>Move down</summary>
       <description>Key to use for motion down.</description>
     </key>
     <key name="key-left" type="i">
-      <default>65361</default>
+      <default>52</default>
       <summary>Move left</summary>
       <description>Key to use for motion left.</description>
     </key>
     <key name="key-right" type="i">
-      <default>65363</default>
+      <default>54</default>
       <summary>Move right</summary>
       <description>Key to use for motion right.</description>
     </key>
